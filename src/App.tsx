@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/Card/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,11 +8,12 @@ function App() {
   return (
     <>
       <h1>Digital Postcard</h1>
+      <Card/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           hope is {count}
         </button>
-        <p>
+        <p className="text-3xl font-bold underline">
           Send a virtual postcard to your friends.
         </p>
       </div>
