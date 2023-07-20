@@ -1,4 +1,11 @@
 :root {
+  /* color palatte */
+  --dark-green: #3f6a5b;
+  --light-blue: #8EA9C1;
+  --brown: #AD8A64;
+  --light-brown: #C79650;
+  --light-red: #BE647F;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,6 +31,7 @@ a:hover {
 }
 
 body {
+  background-color: var(--light-blue);
   margin: 0;
   display: flex;
   place-items: center;
