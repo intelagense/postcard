@@ -1,5 +1,6 @@
 import ReactFlipCard from 'reactjs-flip-card';
-
+import CardBack from '../CardBack/CardBack';
+import CardFront from '../CardFront/CardFront'
 
     const styles = {
         container: {padding: 20},
@@ -18,9 +19,10 @@ import ReactFlipCard from 'reactjs-flip-card';
         flex: {display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10},
         cardFront: {
             border: '3px solid #444444',
-            background: 'linear-gradient(#dddddd 0,lightblue 25%,var(--dark-green) 45%,green 75%,var(--brown))',
+            backgroundImage: 'linear-gradient(#ffffff66, #ddddffdd), url(/images/clouds.gif)',
             color: 'var(--dark-blue)',
             borderRadius: 20,
+            overflow: "hidden",
         },
         cardBack: {
             border: '3px solid #444444',
@@ -28,6 +30,7 @@ import ReactFlipCard from 'reactjs-flip-card';
             color: 'black',
             borderRadius: 20,
         },
+        overflowHidden: {overflow: "hidden"}, 
         marginTop10: {padding: 10},
         marginBottom10: {marginBottom: 10},
         padding10: {padding: 10},
@@ -49,8 +52,8 @@ const Card = () => {
                     containerCss={'resizeBasedOnParent'}
                     frontStyle={styles.cardFront}
                     backStyle={styles.cardBack}
-                    frontComponent={<div style={styles.padding10}>Wish you were here!</div>}
-                    backComponent={<div style={styles.padding10}>See you soon!</div>}
+                    frontComponent={<CardFront />}
+                    backComponent={<CardBack />}
                 />
             </div>
         </div>
