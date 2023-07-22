@@ -5,12 +5,15 @@ Send a virtual postcard to a friend.
 React, TypeScript, etc.
 
 ## Must haves
-[ ] Animated CSS grass  
-[ ] Animated clouds  
+[x] Animated CSS grass  
+[x] Animated clouds  
 [ ] Animated parking light  
-[ ] Flippable postcard  
+[x] Flippable postcard  
 [ ] Custom text fields (front and back)  
 [ ] @media query for printing on card stock  
+[ ] @media prefers reduced motion
+[ ] Scooter img on back
+[ ] Atkinson Hyperlegible on back
 
 ## Might haves
 [ ] email option  

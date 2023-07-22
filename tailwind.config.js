@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      blur: {
+        smol: '.02rem',
+        baby: '.04rem',
+        xs: '2px',
+      }
+    },
   },
   plugins: [],
 }
