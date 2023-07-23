@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'super': ['"super"'],
+      'super-outline': ['"super outline"'],
+    },
     extend: {
       blur: {
         smol: '.02rem',
