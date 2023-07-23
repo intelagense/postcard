@@ -44,7 +44,7 @@ import CardFront from '../CardFront/CardFront'
 
 const Card = () => {
     return (
-        <div className="flex items-center justify-center h-222">
+        <div className="flex items-center justify-center h-222 p-10">
             <div style={styles.size200}>
                 <ReactFlipCard
                     flipCardCss={'transitionDuration'}

@@ -10,9 +10,15 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* hide scroll bar during flip */
-  overflow: hidden; 
+
+  background-color: var(--light-blue);
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
 }
+  
 
 .clickable {
   cursor: pointer;
@@ -72,19 +78,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  background-color: var(--light-blue);
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -114,6 +107,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #b66780;
+    color: white;
   }
 }
