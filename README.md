@@ -23,5 +23,4 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [ ] Sharing via text  
 - [ ] Customize country marks?  
 
-Credits:
 https://morguefile.com/p/75658
