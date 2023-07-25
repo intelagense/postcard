@@ -6,8 +6,10 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'super': ['"super"'],
+      'super': ['super'],
       'super-outline': ['"super outline"'],
+      'handwrite': ['handwrite'],
+      'handwrite-bold': ['"handwrite bold"'],
     },
     extend: {
       blur: {
