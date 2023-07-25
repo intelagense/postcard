@@ -1,4 +1,4 @@
-# postcard
+# Postcard
 Send a virtual postcard to a friend. 
 
 ## Technologies Used
@@ -22,5 +22,7 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [ ] Sharing via twitter  
 - [ ] Sharing via text  
 - [ ] Cycle through stamps by clicking stamp easter egg.
+- [ ] Vertical border on back?
 
+## Credits
 https://morguefile.com/p/75658
