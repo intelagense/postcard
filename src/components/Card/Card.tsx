@@ -8,27 +8,21 @@ import CardFront from '../CardFront/CardFront'
             fontSize: "1.5rem", fontWeight: "bold",
             marginBottom: 10, textAlign: "center"
         },
-        sectionExample: {
-            background: "#f1f1f1",
-            margin: 20,
-            padding: 20,
-            borderRadius: 20
-        },
         textAlignCenter: {textAlign: "center"},
         fontStyleItalic: {fontStyle: "italic"},
         flex: {display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10},
         cardFront: {
-            border: '3px solid #444444',
+            border: '12px solid #fcf7eb',
             backgroundImage: 'linear-gradient(#ffffff66, #ddddffdd), url(/images/clouds.gif)',
             color: 'var(--dark-blue)',
-            borderRadius: 20,
+            borderRadius: 4,
             overflow: "hidden",
         },
         cardBack: {
-            border: '3px solid #444444',
-            background: '#dddddd',
+            border: '6px dashed #b66780',
+            background: '#fcf7eb',
             color: 'black',
-            borderRadius: 20,
+            borderRadius: 4,
         },
         overflowHidden: {overflow: "hidden"}, 
         marginTop10: {padding: 10},
@@ -47,11 +41,14 @@ const Card = () => {
         <div className="flex items-center justify-center h-222 p-10">
             <div style={styles.size200}>
                 <ReactFlipCard
+                    flipTrigger={'onHover'}
                     flipCardCss={'transitionDuration'}
                     direction={'diagonal'}
                     containerCss={'resizeBasedOnParent'}
+                    // frontStyle={styles.cardBack}
                     frontStyle={styles.cardFront}
                     backStyle={styles.cardBack}
+                    // frontComponent={<CardBack />}
                     frontComponent={<CardFront />}
                     backComponent={<CardBack />}
                 />

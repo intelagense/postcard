@@ -7,10 +7,21 @@
 
 @font-face {
   font-family: 'super';
-  src: url('./assets/Super\ Glue.ttf') format('truetype');
+  src: url('./assets/Super Glue.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'super outline';
-  src: url('./assets/Super\ Glue\ Outline.ttf') format('truetype');
+  src: url('./assets/Super Glue Outline.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'handwrite';
+  src: url('./assets/Peax Handwritinglight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'handwrite bold';
+  src: url('./assets/Peax Handwritingbold.ttf') format('truetype');
+}
+
