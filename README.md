@@ -9,11 +9,11 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [x] Animated clouds  
 - [-] Animated parking light  
 - [x] Flippable postcard  
-- [ ] Custom text fields (front and back)  
+- [-] Custom text fields (front and back)  
 - [ ] @media query for printing on card stock  
 - [ ] @media prefers reduced motion
-- [ ] Scooter img on back
-- [ ] Atkinson Hyperlegible on back
+- [x] Scooter img on back
+- [x] Handwriting font on back
 
 ## Might haves
 - [ ] email option  
@@ -21,6 +21,6 @@ React, TypeScript, Tailwind CSS, JSPaint.
 ## Maybe later 
 - [ ] Sharing via twitter  
 - [ ] Sharing via text  
-- [ ] Customize country marks?  
+- [ ] Cycle through stamps by clicking stamp easter egg.
 
 https://morguefile.com/p/75658
