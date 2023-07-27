@@ -7,16 +7,18 @@ React, TypeScript, Tailwind CSS, JSPaint.
 ## Must haves
 - [x] Animated CSS grass  
 - [x] Animated clouds  
-- [-] Animated parking light  
 - [x] Flippable postcard  
 - [-] Custom text fields (front and back)  
-- [ ] @media query for printing on card stock  
-- [ ] @media prefers reduced motion
 - [x] Scooter img on back
 - [x] Handwriting font on back
+- [ ] Create card button
+- [ ] Copy to clipboard
 
 ## Might haves
-- [ ] email option  
+- [ ] Email option  
+- [ ] Tool tips for buttons and card
+- [ ] @media prefers reduced motion
+- [ ] @media query for printing on card stock  
 
 ## Maybe later 
 - [ ] Sharing via twitter  
