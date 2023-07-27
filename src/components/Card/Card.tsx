@@ -36,16 +36,18 @@ const styles = {
     centeredContent: {display: 'flex', justifyContent: 'center', alignItems: 'center'}
 }
 
-
-
 const Card = ({ 
     toggle,
     message, 
     setMessage,
+    address,
+    setAddress,
 } : { 
     toggle: boolean
     message: string, 
     setMessage: (message:string) => void,
+    address: string,
+    setAddress: (address:string) => void,
 }) => {
     return (
         <div className="flex items-center justify-center h-222 p-10 overflow-hidden">
@@ -62,6 +64,8 @@ const Card = ({
                     backComponent={<CardBack 
                         message={message}
                         setMessage={setMessage}
+                        address={address}
+                        setAddress={setAddress}
                     />}
                 />
             </div>

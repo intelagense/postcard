@@ -1,9 +1,13 @@
 const CardBack = ({ 
   message,
   setMessage,
+  address,
+  setAddress,
 } : { 
   message: string,
   setMessage: (message:string) => void,
+  address: string,
+  setAddress: (message:string) => void,
 }) => {
     return (
       <div className="flex h-full font-handwrite-bold text-2xl">
@@ -35,9 +39,9 @@ const CardBack = ({
               className="w-full h-full bg-transparent leading-relaxed outline-none resize-none"
               rows={4}
               maxLength={20}
-            >
-              City Mouse&#13;Boring street&#13;The City, USA
-            </textarea>
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+            ></textarea>
             <div className="-mt-1.5 w-full h-full absolute top-0 left-0 pointer-events-none">
               {Array.from(Array(4).keys()).map((key) => (
                 <p key={key} className="-mb-px border-b border-gray-500 text-transparent leading-relaxed">.</p>
