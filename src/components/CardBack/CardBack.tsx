@@ -31,7 +31,7 @@ const CardBack = ({
         </div>
         <div className="w-1/2 h-full px-5 py-5 flex flex-col justify-between">
           <div className="flex justify-end">
-            <img src="/public/images/stamp.png" className="" style={{ width: "100px" }} />
+            <img src="/images/stamp.png" className="" style={{ width: "100px" }} />
           </div>
           <div className="relative">
             <textarea 
