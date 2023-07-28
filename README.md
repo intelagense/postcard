@@ -1,5 +1,5 @@
 # Postcard
-Send a virtual postcard to a friend. 
+Send a virtual Postcard to a friend. 
 
 ## Technologies Used
 React, TypeScript, Tailwind CSS, JSPaint.
@@ -7,22 +7,31 @@ React, TypeScript, Tailwind CSS, JSPaint.
 ## Must haves
 - [x] Animated CSS grass  
 - [x] Animated clouds  
-- [-] Animated parking light  
-- [x] Flippable postcard  
-- [-] Custom text fields (front and back)  
-- [ ] @media query for printing on card stock  
-- [ ] @media prefers reduced motion
+- [x] Flippable Postcard  
+- [x] Custom text fields (front and back)  
 - [x] Scooter img on back
 - [x] Handwriting font on back
+- [x] Create card button
+- [x] Copy to clipboard
+- [ ] Add footer with links
 
 ## Might haves
-- [ ] email option  
+- [ ] Email option  
+- [ ] Tool tips for buttons and card
+- [ ] @media prefers reduced motion
+- [ ] @media query for printing on card stock  
+- [ ] Flip card by clicking cardFront but not cardBack
 
 ## Maybe later 
-- [ ] Sharing via twitter  
-- [ ] Sharing via text  
-- [ ] Cycle through stamps by clicking stamp easter egg.
-- [ ] Vertical border on back?
+- [ ] Sharing via ~~twitter~~ X
+- [ ] Sharing via text message
+- [ ] Cycle through stamps by clicking (Easter egg)
+- [ ] Vertical border line on back
+- [x] Add validation for JSON URLs
 
-## Credits
+## Maintenance
+- [ ] Long messages add scroll bars
+- [ ] Clip overflow area for reversed card
+## Credits and sources
 https://morguefile.com/p/75658
+https://github.com/emanuelecaurio/react-flip-card
