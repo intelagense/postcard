@@ -5,9 +5,10 @@ interface ButtonGroupProps {
     toggle: boolean
     handleFlip: () => void
     clearCard: () => void
+    shareCard: () => void
 }
 
-const ButtonGroup: FC<ButtonGroupProps> = ({ toggle, handleFlip, clearCard }) => {
+const ButtonGroup: FC<ButtonGroupProps> = ({ toggle, handleFlip, clearCard, shareCard}) => {
     return(
         <>
             <Button 
@@ -15,7 +16,7 @@ const ButtonGroup: FC<ButtonGroupProps> = ({ toggle, handleFlip, clearCard }) =>
                 disabled={!toggle}
                 className={`${ toggle ? "opacity-100" : "opacity-0" } transition-opacity duration-500 ease-in-out`}
             >
-                Reset
+                Clear Card
             </Button>
             <Button 
                 onClick={handleFlip}
@@ -23,11 +24,11 @@ const ButtonGroup: FC<ButtonGroupProps> = ({ toggle, handleFlip, clearCard }) =>
                 Flip
             </Button>
             <Button 
-                onClick={() => {}} 
+                onClick={shareCard} 
                 disabled={!toggle}
                 className={`${ toggle ? "opacity-100" : "opacity-0" } transition-opacity duration-500 ease-in-out`}
             >
-                Share
+                Copy Link
             </Button>
         </>
     )

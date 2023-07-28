@@ -8,11 +8,12 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [x] Animated CSS grass  
 - [x] Animated clouds  
 - [x] Flippable Postcard  
-- [-] Custom text fields (front and back)  
+- [x] Custom text fields (front and back)  
 - [x] Scooter img on back
 - [x] Handwriting font on back
-- [ ] Create card button
-- [ ] Copy to clipboard
+- [x] Create card button
+- [x] Copy to clipboard
+- [ ] Add footer with links
 
 ## Might haves
 - [ ] Email option  
@@ -22,11 +23,15 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [ ] Flip card by clicking cardFront but not cardBack
 
 ## Maybe later 
-- [ ] Sharing via twitter  
-- [ ] Sharing via text  
-- [ ] Cycle through stamps by clicking stamp easter egg.
-- [ ] Vertical border on back?
-- [ ] Add validation for JSON URLs
+- [ ] Sharing via ~~twitter~~ X
+- [ ] Sharing via text message
+- [ ] Cycle through stamps by clicking (Easter egg)
+- [ ] Vertical border line on back
+- [x] Add validation for JSON URLs
 
-## Credits
+## Maintenance
+- [ ] Long messages add scroll bars
+- [ ] Clip overflow area for reversed card
+## Credits and sources
 https://morguefile.com/p/75658
+https://github.com/emanuelecaurio/react-flip-card

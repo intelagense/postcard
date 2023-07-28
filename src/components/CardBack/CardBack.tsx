@@ -18,7 +18,7 @@ const CardBack = ({
               id="message"
               className="w-full h-full px-1 bg-transparent leading-relaxed outline-none resize-none"
               rows={6}
-              maxLength={100}
+              maxLength={120}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
@@ -38,7 +38,7 @@ const CardBack = ({
               id="address"
               className="w-full h-full bg-transparent leading-relaxed outline-none resize-none"
               rows={4}
-              maxLength={20}
+              maxLength={80}
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             ></textarea>
