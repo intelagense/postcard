@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react"
+import { ReactNode } from "react"
 
-interface ButtonProps {
+interface Button {
     name: string
     toggle: boolean
     onClick?: () => void
