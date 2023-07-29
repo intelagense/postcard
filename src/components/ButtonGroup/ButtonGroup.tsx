@@ -10,6 +10,7 @@ interface ButtonGroupProps {
 }
 
 const ButtonGroup: FC<ButtonGroupProps> = ({ toggle, handleFlip, clearCard, shareCard, shareLink}) => {
+    
     return(
         <div className="flex justify-center">
             <Button 

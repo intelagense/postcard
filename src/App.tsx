@@ -113,9 +113,8 @@ function App() {
         setAddress={setAddress}
       />
       <ButtonGroup toggle={toggle} clearCard={clearCard} handleFlip={handleFlip} shareCard={shareCard} shareLink={shareLink} />
-      <p className='flex justify-start ml-5'>made by&nbsp;<a className='underline' href='https://intelagense.com'> intelagense</a></p>
-
-    </>
+      <p className='flex text-neutral-700 justify-end'>made by&nbsp;<a className='underline' href='https://intelagense.com'> intelagense</a></p>
+    </> 
   )
 }
 
