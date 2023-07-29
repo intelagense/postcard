@@ -1,5 +1,10 @@
 # Postcard
-Send a virtual Postcard to a friend. 
+
+Send a virtual Postcard to a friend.  
+
+[!screenshot of postcard app](card.png)
+https://sendcard.netlify.app/  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2fea4b09-23c8-45ff-ba88-891d1a6cf409/deploy-status)](https://app.netlify.com/sites/sendcard/deploys)
 
 ## Technologies Used
 React, TypeScript, Tailwind CSS, JSPaint.
@@ -13,9 +18,9 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [x] Handwriting font on back
 - [x] Create card button
 - [x] Copy to clipboard
-- [ ] Add footer with links
 
 ## Might haves
+- [ ] Add footer with links
 - [ ] Email option  
 - [ ] Tool tips for buttons and card
 - [ ] @media prefers reduced motion
@@ -30,8 +35,8 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [x] Add validation for JSON URLs
 
 ## Maintenance
-- [ ] Long messages add scroll bars
-- [ ] Clip overflow area for reversed card
+- [x] Long messages add scroll bars
+- [x] Clip overflow area for reversed card
 ## Credits and sources
 https://morguefile.com/p/75658
 https://github.com/emanuelecaurio/react-flip-card
