@@ -92,7 +92,8 @@ function App() {
     const shareLink = bytesToBase64(new TextEncoder().encode(JSON.stringify(postcard)));
 
     navigator.clipboard
-      .writeText(`${location.host}/?${shareLink}`)
+    //TODO: fix link protocal
+      .writeText(`${location.protocol}//${location.host}/?${shareLink}`)
       .then(() => {
         setShareLink("Text copied!");
       })
@@ -111,8 +112,9 @@ function App() {
         setMessage={setMessage}
         setAddress={setAddress}
       />
-      <ButtonGroup toggle={toggle} clearCard={clearCard} handleFlip={handleFlip} shareCard={shareCard}/>
-      <p className='ml-[345px]'>{toggle ? shareLink : ""}</p>
+      <ButtonGroup toggle={toggle} clearCard={clearCard} handleFlip={handleFlip} shareCard={shareCard} shareLink={shareLink} />
+      <p className='flex justify-start ml-5'>made by&nbsp;<a className='underline' href='https://intelagense.com'> intelagense</a></p>
+
     </>
   )
 }
