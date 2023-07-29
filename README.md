@@ -35,8 +35,10 @@ React, TypeScript, Tailwind CSS, JSPaint.
 - [x] Add validation for JSON URLs
 
 ## Maintenance
-- [x] Long messages add scroll bars
+- [ ] Long messages add scroll bars
 - [x] Clip overflow area for reversed card
+- [ ] Fix offscreen scrollbar issue on chrome
+
 ## Credits and sources
 https://morguefile.com/p/75658
 https://github.com/emanuelecaurio/react-flip-card
