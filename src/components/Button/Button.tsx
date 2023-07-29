@@ -1,11 +1,5 @@
 import { ReactNode } from "react"
 
-interface Button {
-    name: string
-    toggle: boolean
-    onClick?: () => void
-}
-
 const Button = ({
     className = "",
     children,
@@ -19,7 +13,7 @@ const Button = ({
 }) => {
     return (
         <button 
-            className={`mx-10 drop-shadow ${className}`}
+            className={`bg-[#b66780] hover:bg-[#dc7c9a] text-white font-bold py-2 px-4 m-7 rounded-md z-[100] ${className}`}
             onClick={onClick}
             disabled={disabled}
         >

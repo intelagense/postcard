@@ -3,17 +3,12 @@ import CardBack from '../CardBack/CardBack';
 import CardFront from '../CardFront/CardFront'
 
 const styles = {
-    container: {padding: 20},
-    subTitle: {
-        fontSize: "1.5rem", fontWeight: "bold",
-        marginBottom: 10, textAlign: "center"
-    },
-    textAlignCenter: {textAlign: "center"},
-    fontStyleItalic: {fontStyle: "italic"},
-    flex: {display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10},
+
     cardFront: {
+        transform: 'rotateX(0deg)',
         border: '8px solid #fcf7eb',
         backgroundImage: 'linear-gradient(#ffffff66, #ddddffdd), url(/images/clouds.gif)',
+        backgroundSize: 'cover',
         color: 'var(--dark-blue)',
         borderRadius: 4,
         overflow: "hidden",
@@ -23,19 +18,13 @@ const styles = {
         background: '#fcf7eb',
         color: 'black',
         borderRadius: 4,
+        overflow: "hidden",
     },
-    overflowHidden: {overflow: "hidden"}, 
-    marginTop10: {padding: 10},
-    marginBottom10: {marginBottom: 10},
-    padding10: {padding: 10},
-    padding20: {padding: 20},
-    fontSize1rem: {fontSize: "1rem"},
-    size200: {height: 400, width: 600},
-    fontWeightBold: {fontWeight: "bold"},
-    backgroundOrange: {background: "orange"},
-    centeredContent: {display: 'flex', justifyContent: 'center', alignItems: 'center'}
-}
 
+    size600: {height: 400, minWidth: 100},
+
+}
+ 
 const Card = ({ 
     toggle,
     message, 
@@ -50,14 +39,18 @@ const Card = ({
     setAddress: (address:string) => void,
 }) => {
     return (
-        <div className="flex items-center justify-center h-222 p-10 overflow-hidden">
-            <div style={styles.size200}>
+        <div className="flex items-center w-full justify-center ">
+            <div style={styles.size600}>
                 <ReactFlipCard
                     flipTrigger={'disabled'}
                     flipByProp={toggle}
                     flipCardCss={'transitionDuration'}
                     direction={'diagonal'}
-                    containerCss={'resizeBasedOnParent drop-shadow'}
+                    containerStyle={{
+                        position: 'relative',
+                        height: '100%',
+                        width: '100%',}}
+                    // containerCss={'resizeBasedOnParent drop-shadow overflow-hidden transformStyle'}
                     frontStyle={styles.cardFront}
                     backStyle={styles.cardBack}
                     frontComponent={<CardFront />}

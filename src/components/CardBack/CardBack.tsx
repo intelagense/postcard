@@ -10,9 +10,9 @@ const CardBack = ({
   setAddress: (message:string) => void,
 }) => {
     return (
-      <div className="flex h-full font-handwrite-bold text-2xl">
-        <div className="w-1/2 h-full px-5 py-5 flex flex-col justify-between">
-          <p className="text-left">Middle of nowhere</p>
+      <div className="flex flex-col sm:flex-row h-full font-handwrite-bold text-1xl sm:text-2xl">
+        <div className="w-screen sm:w-1/2 h-full px-1 sm:px-5 py-5 flex flex-col justify-between">
+          <p className="text-left mb-2">Middle of nowhere</p>
           <div className="relative">
             <textarea
               id="message"
@@ -29,14 +29,14 @@ const CardBack = ({
             </div>
           </div>
         </div>
-        <div className="w-1/2 h-full px-5 py-5 flex flex-col justify-between">
+        <div className="w-screen sm:w-1/2 h-full px-1 sm:px-5 py-5 flex sm:flex-col justify-between">
           <div className="flex justify-end">
             <img src="/images/stamp.png" className="" style={{ width: "100px" }} />
           </div>
           <div className="relative">
             <textarea 
               id="address"
-              className="w-full h-full bg-transparent leading-relaxed outline-none resize-none"
+              className="w-full h-full px-1 bg-transparent leading-relaxed outline-none resize-none"
               rows={4}
               maxLength={80}
               value={address}

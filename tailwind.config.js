@@ -16,7 +16,10 @@ export default {
         smol: '.02rem',
         baby: '.04rem',
         xs: '2px',
-      }
+      },
+      backface: {
+        backfaceVisibility: 'hidden',
+      },
     },
   },
   plugins: [],
