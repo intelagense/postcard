@@ -10,20 +10,20 @@ const CardBack = ({
   setAddress: (message:string) => void,
 }) => {
     return (
-      <div className="flex flex-col sm:flex-row h-full font-handwrite-bold text-1xl sm:text-2xl">
+      <div className="flex flex-col sm:flex-row h-full font-handwrite-bold text-2xl ">
         <div className="w-screen sm:w-1/2 h-full px-1 sm:px-5 py-5 flex flex-col justify-between">
           <p className="text-left mb-2">Middle of nowhere</p>
           <div className="relative">
             <textarea
               id="message"
               className="w-full h-full px-1 bg-transparent leading-relaxed outline-none resize-none"
-              rows={6}
+              rows={window.innerWidth >= 640 ? 6 : 3}
               maxLength={120}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <div className="-mt-1.5 w-full h-full absolute top-0 left-0 pointer-events-none">
-              {Array.from(Array(6).keys()).map((key) => (
+              {Array.from(Array(window.innerWidth >= 640 ? 6 : 3).keys()).map((key) => (
                 <p key={key} className="-mb-px border-b border-gray-500 text-transparent leading-relaxed">.</p>
               ))}
             </div>
