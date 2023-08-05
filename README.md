@@ -2,7 +2,7 @@
 
 Send a virtual Postcard to a friend.  
 
-[!screenshot of postcard app](/public/images/card.png)  
+![screenshot of postcard app](/public/images/card.png)  
 https://sendcard.netlify.app/  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2fea4b09-23c8-45ff-ba88-891d1a6cf409/deploy-status)](https://app.netlify.com/sites/sendcard/deploys)
 
